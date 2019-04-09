@@ -1,0 +1,22 @@
+body{
+    font-family: futura;
+}
+
+.mainToolBar{
+    text-align: center;
+    align-content: center;
+    
+}
+
+
+
+.jumbotron {
+    text-align: center;
+    background-color: aquamarine;
+    color: deeppink;
+    border-style: solid;
+    border-color: deeppink
+}
+h1 {
+    font-family: futura;
+}
