@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
     // Create Var To Deploy Once Search Imput Button Is Clicked
-    var searchArray = ["dog","cats","birds"]
+    var searchArray = ["Dogs","Cats","Birds"]
     
     function displaybuttons (){
         

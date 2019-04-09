@@ -19,9 +19,14 @@ h1 {
     font-family: futura;
 }
 
-#buttonContainer {
+.arrayButton {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     margin-right: 5px;
     margin-left: 5px;
+    justify-content: flex-start;
+    background-color: aquamarine;
+    color: deeppink;
+    border-style: solid;
+    border-color: deeppink;
 }
