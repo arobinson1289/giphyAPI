@@ -17,8 +17,10 @@ $(document).ready(function(){
         }
     }
     
+    //Post Display Buttons to page
     displaybuttons();
 
+    //on click event for search button
     $(".arrayButton").on("click", function(){
         $("#images").empty();
         var searchedTerm = $(this).val();
@@ -51,8 +53,14 @@ $(document).ready(function(){
     });
 
     $("#searchButton").on("click", function(){
+        console.log("search buttob clicked")
         $("#images").empty();
         var searchedTerm = $("#input").val();
+        
+        //Alert  Box displayed when no search term present.
+        if (searchedTerm === ""){
+            alert("Please Enter A Search Term");
+        }
 
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchedTerm + "&api_key=dc6zaTOxFJmzC&limit=10";
 
@@ -78,7 +86,7 @@ $(document).ready(function(){
                 $("#images").append(img);
             }
 
-            searchArray.push(searchedTerm);
+            //searchArray.push(searchedTerm);
 
             $("#buttonContainer").empty();
 
@@ -86,6 +94,11 @@ $(document).ready(function(){
 
 
         });
+    });
+
+    $("#clearButton").on("click",function(){
+        console.log("clear button clicked")
+        $("#images").empty();
     });
 
     $(document).on("click", ".imageBtn", function(){
@@ -99,4 +112,6 @@ $(document).ready(function(){
             $(this).attr("src", $(this).attr("data-animate"));
         }
     })
+
+    
 });
